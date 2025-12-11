@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unmatched Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ====== Character Selection Screen ====== -->
+<div id="character-selection">
+  <h1 style="color: rgb(231, 227, 126);">Choose Your Hero</h1>
+  <div id="hero-buttons-container"></div>
+</div>
+
+
+  <!-- ====== Game Screen ====== -->
+  <div id="game-screen" style="display: none;">
+    <h1 id="hero-name"></h1>
+    <div id="figure-area" style="display:flex; justify-content:center; gap:20px; align-items:center;">
+    <div id="figure-area">
+        <img id="hero-figure" class="figure-img">
+        <div id="sidekick-figures"></div>
+    </div>
+    </div>
+
+    <div id="hero-passive" class="hero-passive"></div>
+
+    <div id="hero-stats" class="hero-stats">
+      <span id="hero-hp"></span>
+      <span id="hero-movement"></span>
+      <span id="hero-attack"></span>
+    </div>
+
+    <div id="pandora-fate-wrapper" style="display:none;">
+        <h3 style="color: white;">Pandora Fate Cards</h3>
+        <div id="pandora-hand"></div>
+        <button id="pandora-roll-btn">Draw Fate Card</button>
+        <button id="pandora-reset-btn">Return Hand to Box</button>
+        <button id="pandora-shuffle-btn">Shuffle Box</button>
+    </div>
+
+    <div id="titania-glamour-wrapper" style="display:none;">
+      <h3 style="color: white;">Titania's Glamour</h3>
+      <div id="titania-card"></div> <!-- Only one card -->
+      <button id="titania-reroll-btn">Reroll Glamour</button>
+    </div>
+
+    <button id="shuffleBtn">Shuffle Deck</button>
+    <button id="drawBtn">Draw Card</button>
+    <button id="drawAllBtn">Draw All Cards</button>
+    <button id="shuffleHandBtn">Shuffle Hand Back to Deck</button>
+
+    <h2>Deck: <span id="deck-count">0</span> cards</h2>
+
+    <h2>Your Hand</h2>
+    <div id="hand"></div>
+
+    <button id="playBtn">Play</button>
+    <button id="deckTopBtn">Deck Top</button>
+    <button id="deckBottomBtn">Deck Bottom</button>
+
+    <h2>Discard Pile</h2>
+    <div id="discard"></div>
+
+    <div id="action-buttons">
+      <button id="backBtn">Back to Character Selection</button>
+
+    </div>
+  </div>
+
+  <script src="characters.js"></script>
+  <script src="cards.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

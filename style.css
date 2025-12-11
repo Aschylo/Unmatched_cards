@@ -1,0 +1,250 @@
+/* ===== Body & General Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #302f3e;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #5f86b1;
+    color: white;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2a517a;
+    transform: scale(1.05);
+}
+
+/* ===== Character Selection ===== */
+#character-selection {
+    margin-top: 20px;
+}
+
+#hero-buttons-container {
+  display: flex;
+  justify-content: center; /* centers the buttons horizontally */
+  gap: 20px; /* spacing between buttons */
+  flex-wrap: wrap; /* wrap if needed */
+  margin-top: 20px; /* spacing below the heading */
+}
+
+
+/* ===== Game Screen Headings ===== */
+#game-screen h1,
+#game-screen h2 {
+    margin: 10px 0;
+    color: white;
+}
+#game-screen p {
+    margin: 10px 0;
+    color: #d1d1d1;
+}
+
+
+/* ===== Hand & Discard Containers ===== */
+#hand,
+#discard {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ===== Card Containers ===== */
+.card-container {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+/* ===== Card Appearance ===== */
+.hand-card,
+.discard-card {
+    width: 180px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.2s;
+}
+
+/* Hand hover zoom */
+.hand-card:hover {
+    transform: scale(1.2);
+}
+
+/* Discard fade + hover zoom */
+.discard-card {
+    opacity: 0.7;
+}
+
+.discard-card:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* ===== Selected Card Highlight ===== */
+.selected-card {
+    border: 3px solid gold;
+    transform: scale(1.1);
+}
+
+/* ===== Hero Name ===== */
+#hero-name {
+    margin: 10px 0 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* ===== Buttons Under Each Card ===== */
+.card-buttons {
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.card-buttons button {
+    font-size: 12px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+/* ===== Bottom Action Buttons ===== */
+#action-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+}
+
+.hero-btn {
+  width: 120px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+
+  /* Text styling */
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 
+     1px 1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+     1px -1px 0 rgb(255, 255, 255),
+    -1px -1px 0 rgb(255, 255, 255);
+  display: flex;
+  align-items: flex-end; /* text at bottom of button */
+  justify-content: center;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  border-color: gold;
+}
+
+#figure-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.figure-img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.sidekick-img {
+    width: 75px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Space between stats */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.hero-stats span {
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.hero-passive {
+  width: 80%;              /* Takes 80% of screen width */
+  max-width: 400px;        /* Won't exceed 400px */
+  height: 120px;           /* Fixed height */
+  max-height: 150px;       /* Can grow a little if needed */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px auto;       /* Center horizontally */
+  background-color: #302f3e;
+  overflow-y: auto;        /* Scroll if text overflows */
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+  box-sizing: border-box;  /* Include padding in width/height */
+  color: #d1d1d1;
+  white-space: pre-line;
+}
+
+#pandora-hand {
+    display: flex;
+    justify-content: center; /* center like hand */
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pandora-card {
+    width: 180px;          /* same as hand-card */
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.2s;
+}
+
+.pandora-card:hover {
+    transform: scale(1.2);
+}
+
+.pandora-card.selected {
+    border: 3px solid gold;
+    transform: scale(1.1);
+}
+
+#titania-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titania-card-img {
+    width: 180px;  /* same as hand/pandora */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.titania-card-img:hover {
+    transform: scale(1.2);
+}
+
