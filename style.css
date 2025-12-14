@@ -97,6 +97,7 @@ button:hover {
 .selected-card {
     border: 3px solid gold;
     transform: scale(1.1);
+    opacity: 1;
 }
 
 /* ===== Hero Name ===== */
@@ -248,3 +249,30 @@ button:hover {
     transform: scale(1.2);
 }
 
+/* --- Titania Discard --- */
+#titania-discard {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.titania-discard-card {
+    width: 90px;              /* smaller than main glamour card */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 6px;
+    opacity: 0.7;
+}
+
+.titania-discard-card:hover {
+    transform: scale(1.15);
+}
+
+/* Selected discard (reuse your selected-card glow style if you have one) */
+.titania-discard-card.selected-card {
+    box-shadow: 0 0 12px 3px rgba(255, 180, 255, 0.9);
+    transform: scale(1.15);
+    opacity: 1;
+}
