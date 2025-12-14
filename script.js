@@ -87,15 +87,20 @@ document.getElementById("pandora-shuffle-btn").onclick = () => {
 let titaniaDeck = [];
 let titaniaCurrentCard = null;
 let titaniaDiscard = [];
+let titaniaSelectedIndex = null;
 
 // Initialize Titania Glamour
 function initTitaniaGlamour() {
-    titaniaDeck = [...TitaniaGlamourDeck]; // copy deck
+    titaniaDeck = [...TitaniaGlamourDeck];
     titaniaCurrentCard = null;
     titaniaDiscard = [];
-    shuffle(titaniaDeck); // optional shuffle
+    titaniaSelectedIndex = null;
+
+    shuffle(titaniaDeck);
     updateTitaniaUI();
+    updateTitaniaDiscardUI();
 }
+
 
 // Update UI
 function updateTitaniaUI() {
@@ -114,6 +119,30 @@ function updateTitaniaUI() {
     }
 }
 
+function updateTitaniaDiscardUI() {
+    const div = document.getElementById("titania-discard");
+    div.innerHTML = "";
+
+    titaniaDiscard.forEach((card, index) => {
+        const img = document.createElement("img");
+        img.src = card.image;
+        img.className = "titania-discard-card";
+
+        // Highlight selected
+        if (titaniaSelectedIndex === index) {
+            img.classList.add("selected-card");
+        }
+
+        img.onclick = () => {
+            titaniaSelectedIndex = index;
+            updateTitaniaDiscardUI();
+        };
+
+        div.appendChild(img);
+    });
+}
+
+
 // Reroll Titania card
 document.getElementById("titania-reroll-btn").onclick = () => {
     if (titaniaDeck.length === 0) {
@@ -122,14 +151,32 @@ document.getElementById("titania-reroll-btn").onclick = () => {
     }
 
     if (titaniaCurrentCard) {
-        // Move current card to hidden discard
         titaniaDiscard.push(titaniaCurrentCard);
     }
 
-    // Draw new card
     titaniaCurrentCard = titaniaDeck.pop();
+    titaniaSelectedIndex = null;
+
     updateTitaniaUI();
+    updateTitaniaDiscardUI();
 };
+
+document.getElementById("titania-deck-bottom-btn").onclick = () => {
+    if (titaniaSelectedIndex === null) {
+        alert("Select a discarded Glamour card!");
+        return;
+    }
+
+    const card = titaniaDiscard.splice(titaniaSelectedIndex, 1)[0];
+
+    // Bottom of deck (since draw uses pop)
+    titaniaDeck.unshift(card);
+
+    titaniaSelectedIndex = null;
+    updateTitaniaDiscardUI();
+};
+
+
 
 // --- Hand UI ---
 function updateHandUI() {
