@@ -268,7 +268,7 @@ const decks = {
   { name: "What a Terrible Big Mouth You Have", count: 2, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/MFk-_yPhM6jcizrUuYdYu.webp" },
   { name: "Never Leave the Path", count: 2, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/rBFJyAYYcJv8l_mG4E3p0.webp" },
   { name: "A Grimm Tale", count: 2, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/Z_vhyAWFFIwqE5Y9JHiHi.webp" },
-  { name: "Into the Woods", count: 3, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/zbor2pw7IucurrmUXBHLP.webp" },
+  { name: "Into the Woods", count: 1, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/zbor2pw7IucurrmUXBHLP.webp" },
   { name: "Into the Woods (rose)", count: 1, image: "little-red/Rose.png" },
   { name: "Into the Woods (sword)", count: 1, image: "little-red/Sword.png" }
   ],
@@ -1066,3 +1066,4 @@ const TitaniaGlamourDeck = [
 ];
 
   
+
