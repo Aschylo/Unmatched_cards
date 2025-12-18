@@ -76,7 +76,7 @@ const heroes = {
     "King Arthur": {
         background: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/heroes/card-covers/WWzu16BEFGsEdu5NsMbMI.png",
         figure: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/heroes/minis/q2P9K10o3vHFETym77rtX.png",
-        passive: "When King Arthur attacks, you may BOOST that attack, Play the BOOST card, face down, along with your attack card. If your opponent cancels the effects on your attack card, the BOOST is discarded without effect.",
+        passive: "When King Arthur attacks, you may BOOST that attack, Play the BOOST card, face down, along with your attack card.",
         hp: "18 & 7 (Merlin)",
         movement: 2,
         attack : "Melee & Range (Merlin)",
@@ -875,3 +875,4 @@ const heroes = {
         ]
     },
 };
+
