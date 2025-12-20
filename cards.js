@@ -1114,6 +1114,25 @@ const decks = {
   { name: "restoration", count: 2, image: "zelda/restoration.png" },
   { name: "sage", count: 2, image: "zelda/sage.png" },
   ]
+
+  "Draco" : [
+  { name: "Action", count: 2, image: "draco/Action.jpeg" },
+  { name: "armor", count: 2, image: "draco/armor.jpeg" },
+  { name: "cloak", count: 2, image: "draco/cloak.jpeg" },
+  { name: "death", count: 2, image: "draco/death.jpeg" },
+  { name: "decapitate", count: 2, image: "draco/decapitate.jpeg" },
+  { name: "extra_a", count: 3, image: "draco/extra_a.jpeg" },
+  { name: "help", count: 2, image: "draco/help.jpeg" },
+  { name: "legion", count: 1, image: "draco/legion.jpeg" },
+  { name: "martial", count: 2, image: "draco/martial.jpeg" },
+  { name: "opportunity", count: 2, image: "draco/opportunity.jpeg" },
+  { name: "ready", count: 2, image: "draco/ready.jpeg" },
+  { name: "reclaim", count: 1, image: "draco/reclaim.jpeg" },
+  { name: "second", count: 2, image: "draco/second.jpeg" },
+  { name: "shadow", count: 2, image: "draco/shadow.jpeg" },
+  { name: "the", count: 1, image: "draco/the.jpeg" },
+  { name: "vorpal", count: 2, image: "draco/vorpaL.jpeg" },
+  ]
 };
 
 const pandoraFateDeck = [
@@ -1136,4 +1155,5 @@ const TitaniaGlamourDeck = [
 ];
 
   
+
 
