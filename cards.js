@@ -1113,7 +1113,7 @@ const decks = {
   { name: "benevolence", count: 2, image: "zelda/benevolence.png" },
   { name: "restoration", count: 2, image: "zelda/restoration.png" },
   { name: "sage", count: 2, image: "zelda/sage.png" },
-  ]
+  ],
 
   "Draco" : [
   { name: "Action", count: 2, image: "draco/Action.jpeg" },
@@ -1132,7 +1132,7 @@ const decks = {
   { name: "shadow", count: 2, image: "draco/shadow.jpeg" },
   { name: "the", count: 1, image: "draco/the.jpeg" },
   { name: "vorpal", count: 2, image: "draco/vorpaL.jpeg" },
-  ]
+  ],
 };
 
 const pandoraFateDeck = [
@@ -1155,5 +1155,6 @@ const TitaniaGlamourDeck = [
 ];
 
   
+
 
 
