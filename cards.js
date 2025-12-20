@@ -269,8 +269,8 @@ const decks = {
   { name: "Never Leave the Path", count: 2, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/rBFJyAYYcJv8l_mG4E3p0.webp" },
   { name: "A Grimm Tale", count: 2, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/Z_vhyAWFFIwqE5Y9JHiHi.webp" },
   { name: "Into the Woods", count: 1, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/zbor2pw7IucurrmUXBHLP.webp" },
-  { name: "Into the Woods (rose)", count: 1, image: "Little-red/Rose.png" },
-  { name: "Into the Woods (sword)", count: 1, image: "Little-red/Sword.png" }
+  { name: "Into the Woods (rose)", count: 1, image: "little-red/Rose.png" },
+  { name: "Into the Woods (sword)", count: 1, image: "little-red/Sword.png" }
   ],
 
   "Buffy": [
@@ -1044,6 +1044,76 @@ const decks = {
   { name: "The Future Ex‑Mrs. Malcolm", count: 1, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/LrAQFX-RbZbQpWWJIlp9s.webp" }
   ],
 
+  "Hercules": [
+  { name: "augean", count: 1, image: "hercules/augean.jpeg" },
+  { name: "belt", count: 1, image: "hercules/belt.jpeg" },
+  { name: "burden", count: 2, image: "hercules/burden.jpeg" },
+  { name: "cattle", count: 1, image: "hercules/cattle.jpeg" },
+  { name: "ceryneian", count: 1, image: "hercules/ceryneian.jpeg" },
+  { name: "cretan", count: 1, image: "hercules/cretan.jpeg" },
+  { name: "erymanthian", count: 1, image: "hercules/erymanthian.jpeg" },
+  { name: "feint", count: 2, image: "hercules/feint.jpeg" },
+  { name: "gatekeeper", count: 1, image: "hercules/gatekeeper.jpeg" },
+  { name: "gift", count: 3, image: "hercules/gift.jpeg" },
+  { name: "god", count: 2, image: "hercules/god.jpeg" },
+  { name: "golden", count: 1, image: "hercules/golden.jpeg" },
+  { name: "hound", count: 1, image: "hercules/hound.jpeg" },
+  { name: "lernean", count: 1, image: "hercules/lernean.jpeg" },
+  { name: "mares", count: 1, image: "hercules/mares.jpeg" },
+  { name: "maw", count: 2, image: "hercules/maw.jpeg" },
+  { name: "measured", count: 2, image: "hercules/measured.jpeg" }, 
+  { name: "nemean", count: 1, image: "hercules/nemean.jpeg" },
+  { name: "path", count: 2, image: "hercules/path.jpeg" },
+  { name: "stymphalian", count: 1, image: "hercules/stymphalian.jpeg" },
+  { name: "unchained", count: 2, image: "hercules/unchained.jpeg" },
+  ],
+
+  "Kirby" : [
+  { name: "Mike", count: 2, image: "kirby/mike.png" },
+  { name: "Poison", count: 2, image: "kirby/poison.png" },
+  { name: "Fire", count: 3, image: "kirby/fire.png" },
+  { name: "Esp", count: 2, image: "kirby/esp.png" },
+  { name: "Mirror", count: 2, image: "kirby/mirror.png" },
+  { name: "Sword", count: 3, image: "kirby/sword.png" },
+  { name: "Cook", count: 3, image: "kirby/cook.png" },
+  { name: "Shock", count: 2, image: "kirby/shock.png" },
+  { name: "Paint", count: 3, image: "kirby/paint.png" },
+  { name: "Beam", count: 2, image: "kirby/beam.png" },
+  { name: "Freeze", count: 3, image: "kirby/freeze.png" },
+  { name: "Ufo", count: 3, image: "kirby/ufo.png" },
+  ],
+
+  "Barbara McClintock" : [
+  { name: "cytogenesis", count: 3, image: "barbara/cytogenesis.png" },
+  { name: "enzyme", count: 3, image: "barbara/enzyme.png" },
+  { name: "genetic", count: 2, image: "barbara/genetic.png" },
+  { name: "genetic_r", count: 2, image: "barbara/genetic_r.png" },
+  { name: "maize", count: 3, image: "barbara/maize.png" },
+  { name: "meiosis", count: 2, image: "barbara/meiosis.png" },
+  { name: "mutating", count: 2, image: "barbara/mutating.png" },
+  { name: "ring", count: 2, image: "barbara/ring.png" },
+  { name: "telomere", count: 2, image: "barbara/telomere.png" },
+  { name: "transposon", count: 3, image: "barbara/transposon.png" },
+  { name: "triploid", count: 3, image: "barbara/triploid.png" },
+  { name: "mutation", count: 3, image: "barbara/mutation.png" },
+  ],
+
+  "Princess Zelda" : [
+  { name: "to", count: 3, image: "zelda/to.png" },
+  { name: "recall", count: 2, image: "zelda/recall.png" },
+  { name: "forbidden", count: 2, image: "zelda/forbidden.png" },
+  { name: "something", count: 2, image: "zelda/something.png" },
+  { name: "dragon", count: 2, image: "zelda/dragon.png" },
+  { name: "wisdom", count: 2, image: "zelda/wisdom.png" },
+  { name: "find", count: 2, image: "zelda/find.png" },
+  { name: "draconic", count: 2, image: "zelda/draconic.png" },
+  { name: "faith", count: 2, image: "zelda/faith.png" },
+  { name: "purifying", count: 2, image: "zelda/purifying.png" },
+  { name: "centuries", count: 3, image: "zelda/centuries.png" },
+  { name: "benevolence", count: 2, image: "zelda/benevolence.png" },
+  { name: "restoration", count: 2, image: "zelda/restoration.png" },
+  { name: "sage", count: 2, image: "zelda/sage.png" },
+  ]
 };
 
 const pandoraFateDeck = [
@@ -1064,7 +1134,4 @@ const TitaniaGlamourDeck = [
   { name : "Glamour of Rhyme", image: "glamour/Rhyme.png"},
   { name : "Glamour of Sleep", image: "glamour/Sleep.png"}
 ];
-
   
-
-

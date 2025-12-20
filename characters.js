@@ -65,6 +65,11 @@ const heroList = [
   "Donatello",
   "Michelangelo",
   "Raphael",
+  "Hercules",
+  "Princess Zelda",
+  "Kirby",
+  "Barbara McClintock",
+  "Draco",
   "Shredder",
   "Krang",
   "Bruce Lee",
@@ -827,6 +832,62 @@ const heroes = {
         ]
     },
 
+    "Hercules": {
+        background: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Antonio_del_Pollaiolo%2C_Ercole_e_l%27Idra%2C_1470-75_ca._%28Uffizi%29_02-edit.jpg/500px-Antonio_del_Pollaiolo%2C_Ercole_e_l%27Idra%2C_1470-75_ca._%28Uffizi%29_02-edit.jpg",
+        figure: "hercules/hercules.png",
+        passive: "Cerberus doesn't start on the board. \n\nAfter Hercules wins a combat with a labor card, tuck it under this card as a labor trophy.\nYou may have up to 3 active trophies at the time, if you were to again a fourth one, discard the earliest trophy active.\nEffects on trophies cannot be cancelled.",
+        hp: "15 & 5 (Cerberus)",
+        movement: 3,
+        attack : "Melee",
+        sidekicks: [
+            { name: "Cerberus", hp: 5, image: "hercules/cerberus.png" },
+        ]
+    },
+
+    "Kirby": {
+        background: "kirby/bg.jpeg",
+        figure: "https://cdn.wikirby.com/thumb/0/0d/KARs_Kirby.png/800px-KARs_Kirby.png",
+        passive: "At the start of your turn, you may set your COPY ABILITY to the type of card that the top of any player's discard pile is (attack, versatile, defense, scheme). Resolve effects on your cards based on your COPY ABILITY. \nStart the game with a COPY ABILITY of your choice.",
+        hp: 15,
+        movement: 3,
+        attack : "Melee",
+        sidekicks: []
+    },
+
+    "Barbara McClintock": {
+        background: "barbara/bg.jpeg",
+        figure: "https://www.embl.org/about/info/communications/wp-content/uploads/2021/02/Barbara-McClintock_1000px.png",
+        passive: "After playing a card with a DNA effect, add it to your DNA. If you add a card with the same color effect, discard the first. DNA effects are part of your ability.",
+        hp: 15,
+        movement: 2,
+        attack : "Melee",
+        sidekicks: []
+    },
+
+    "Princess Zelda": {
+        background: "zelda/bg.jpeg",
+        figure: "zelda/char.png",
+        passive: "Princess Zelda:\nAfter each combat, if Zelda played a card, you may deal 1 damage to her. If you do, put that card on the bottom of your deck.\nAt the end of any action, if there are 10 or more cards in your discard pile, become Light Dragon.\n\nLight Dragon:\nLight Dragon is a Large fighter and has REACH. When this card is flipped, shuffle the Light Dragon's cards into your deck.\nBLIND BOOST any maneuver and all combat cards you play. This effect happens DURING COMBAT for combats.",
+        hp: 15,
+        movement: 2,
+        attack : "Range & Reach (Light Dragon)",
+        sidekicks: [
+            { name: "Light Dragon", hp: 15, image: "https://cdn.wikimg.net/en/zeldawiki/images/thumb/d/d5/TotK_Light_Dragon_Model.png/480px-TotK_Light_Dragon_Model.png" },
+        ]
+    },
+
+    "Draco": {
+        background: "",
+        figure: "",
+        passive: "",
+        hp: 0,
+        movement: 0,
+        attack : "",
+        sidekicks: [
+            { name: "", hp: 0, image: "" },
+        ]
+    },
+
      "Shredder": {
         background: "",
         figure: "",
@@ -874,5 +935,5 @@ const heroes = {
             { name: "", hp: 0, image: "" },
         ]
     },
-};
 
+};
