@@ -64,7 +64,7 @@ const decks = {
   { name: "Voyage to the Island That Was a Whale", count: 1, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/IJZ-AAchFZLaGLcVO_IiI.png" },
   { name: "Exploit", count: 2, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/UhlUFXr74L339Pm2PdGgz.png" },
   { name: "Leap Away", count: 2, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/u4EIl-QkbvWJ9zlhduf2A.webp" },
-  { name: "Momentous Shift", count: 3, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/5Yz2eME1ZJNq7E5tmGJoK.png" },
+  { name: "Momentous Shift", count: 3, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/IWdliMRNJdPs8fbhcfO_8.png" },
   { name: "Toil and Danger", count: 4, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/5Yz2eME1ZJNq7E5tmGJoK.png" },
   { name: "Feint", count: 3, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/fCrz_yRzBhWOZ1kR799zH.png" },
   { name: "Regroup", count: 3, image: "https://yptpnirqgfmxphjvsdjz.supabase.co/storage/v1/object/public/decks/u9cvvtmTiByln765B1mic.png" },
@@ -1155,6 +1155,7 @@ const TitaniaGlamourDeck = [
 ];
 
   
+
 
 
 
