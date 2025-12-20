@@ -1131,7 +1131,7 @@ const decks = {
   { name: "second", count: 2, image: "draco/second.jpeg" },
   { name: "shadow", count: 2, image: "draco/shadow.jpeg" },
   { name: "the", count: 1, image: "draco/the.jpeg" },
-  { name: "vorpal", count: 2, image: "draco/vorpaL.jpeg" },
+  { name: "vorpal", count: 2, image: "draco/vorpal.jpeg" },
   ],
 };
 
@@ -1155,6 +1155,7 @@ const TitaniaGlamourDeck = [
 ];
 
   
+
 
 
 
