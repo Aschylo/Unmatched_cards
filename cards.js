@@ -1134,4 +1134,5 @@ const TitaniaGlamourDeck = [
   { name : "Glamour of Rhyme", image: "glamour/Rhyme.png"},
   { name : "Glamour of Sleep", image: "glamour/Sleep.png"}
 ];
+
   
