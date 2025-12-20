@@ -877,14 +877,14 @@ const heroes = {
     },
 
     "Draco": {
-        background: "",
-        figure: "",
-        passive: "",
-        hp: 0,
-        movement: 0,
-        attack : "",
+        background: "draco/bg.png",
+        figure: "draco/char.png",
+        passive: "At the start of the game, start with 1 Echo in Draco’s zone.\nEvery time you take the maneuver action, Draco may switch position with any Echo, regardless of distance.\nIf any Echo is more than 6 range away from Draco at the end of your turn, that Echo dies.\nOn your turn, you may spend 1 action to spawn 1 Echo, unless there's already an Echo on the board.",
+        hp: 14,
+        movement: 3,
+        attack : "Melee",
         sidekicks: [
-            { name: "", hp: 0, image: "" },
+            { name: "Echo (x2)", hp: 1, image: "draco/echo.png" },
         ]
     },
 
@@ -937,3 +937,4 @@ const heroes = {
     },
 
 };
+
